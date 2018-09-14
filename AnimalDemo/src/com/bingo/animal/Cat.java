@@ -3,8 +3,15 @@ package com.bingo.animal;
 public class Cat extends Animal{
 	private double weight;//体重
 	
+	public static int str = 2;
+	static {
+		System.out.println("cat静态代码块");
+	}
+	{
+		System.out.println("cat构造代码块");
+	}
 	public Cat(){
-		
+		System.out.println("cat构造函数");
 	}
 
 	
