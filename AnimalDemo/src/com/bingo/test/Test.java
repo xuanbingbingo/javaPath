@@ -8,6 +8,7 @@ public class Test {
 		// TODO Auto-generated method stub
 		Cat one = new Cat();
 		one.setName("花花");
+		System.out.println(one.getName());
 		one.setSpeciaes("中华田园猫");
 		one.run();
 	}
