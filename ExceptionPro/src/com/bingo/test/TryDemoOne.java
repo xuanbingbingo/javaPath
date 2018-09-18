@@ -16,9 +16,13 @@ public class TryDemoOne {
 			int one = input.nextInt();
 			int two = input.nextInt();
 			System.out.println("one,two相除结果是："+one/two);
-		}catch(InputMismatchException e){
+		}catch(ArithmeticException e){
 			e.printStackTrace();
-			System.out.println("程序出错了,输入不能为整数");
+			System.out.println("程序出错了！");
+		}catch(InputMismatchException e){
+			System.exit(1);//无条件终止执行
+			e.printStackTrace();
+			System.out.println("程序出错了,输入不是整数");
 		}catch(Exception e){
 			e.printStackTrace();
 			System.out.println("程序出错了！");
